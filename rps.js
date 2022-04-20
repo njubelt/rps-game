@@ -52,7 +52,7 @@ function game() {
           return 'Sorry, the computer beat you. Final score was ' + computerWins + ' to ' + playerWins + '.';
      }
      else if (playerWins > computerWins) {
-          return 'Congrats! You beat the computer. Final score was ' + playerWins + ' to ' + computerWins '.';
+          return 'Congrats! You beat the computer. Final score was ' + playerWins + ' to ' + computerWins + '.';
      }
      else {
           return 'It was a tie! You each scored ' + playerWins + '.';
