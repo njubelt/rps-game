@@ -3,10 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
-        <script src="rps.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
     </head>
-
     <body>
-       
+        <div class="header">
+           <h1>ULTIMATE RPS SHOWDOWN</h1>
+        </div>
+        <div class="body">
+            <div id="scoreHeader">Current Score</div>
+            <div class ="scoreContainer">
+                <div class="playerScoreContainer">
+                    <p>You</p>
+                    <p id="playerScore">x</p>
+                </div>
+                <div class="cpuScoreContainer">
+                    <p>Computer</p>
+                    <p id="cpuScore">x</p>
+                </div>
+            </div> 
+        </div>
+        <div class="buttons">
+            <h2>Choose your weapon:</h2>
+            <div class="buttonContainer">
+                <button id="rock">&#129704;</button>
+                <button id="paper">&#128196;</button>
+                <button id="scissors">&#9986;</button>
+            </div> 
+           
+       </div>
     </body>
 </html>

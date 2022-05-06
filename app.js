@@ -1,3 +1,4 @@
+
 function computerPlay() {
      play = Math.floor(Math.random()*3);
      if (play == 0) {
