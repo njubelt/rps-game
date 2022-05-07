@@ -1,4 +1,21 @@
+//set constants to document elements
+const rockButton = document.querySelector('#rock');
+const paperButton = document.querySelector('#paper');
+const scissorsButton = document.querySelector('#scissors');
 
+//set event listeners and execute function
+rockButton.addEventListener('click', () => {
+     playRound('rock', computerPlay())
+});
+paperButton.addEventListener('click', () => {
+    playRound('paper', computerPlay())
+});
+scissorsButton.addEventListener('click', () => {
+    playRound('scissors', computerPlay())
+});
+
+
+//RNG for computer turn
 function computerPlay() {
      play = Math.floor(Math.random()*3);
      if (play == 0) {
@@ -12,6 +29,7 @@ function computerPlay() {
      }
 }
 
+//function to play a single round and return the results
 function playRound(playerSelection, computerSelection) {
      playerSelection = playerSelection.toLowerCase();
 

@@ -3,6 +3,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #e6e6e6;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 h1 {
@@ -80,4 +82,11 @@ button {
     justify-content: center;
     margin: 0px 40px 40px;
     padding: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
 }
