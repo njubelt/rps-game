@@ -4,22 +4,30 @@
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="style.css">
-        <script src="app.js"></script>
+        <script src="app.js" defer></script>
     </head>
     <body>
         <div class="header">
            <h1>ULTIMATE RPS SHOWDOWN</h1>
         </div>
         <div class="body">
-            <div id="scoreHeader">Current Score</div>
+            <div id="scoreHeader">Current Score:</div>
             <div class ="scoreContainer">
+                <div class ="playerSelectionContainer">
+                    <div class="playerSelectionHeader">You selected:</div>
+                    <div id="playerSelection">x</div>
+                </div>
                 <div class="playerScoreContainer">
-                    <p>You</p>
-                    <p id="playerScore">x</p>
+                    <div>You</div>
+                    <div id="playerScore">x</div>
                 </div>
                 <div class="cpuScoreContainer">
-                    <p>Computer</p>
-                    <p id="cpuScore">x</p>
+                    <div>Computer</div>
+                    <div id="cpuScore">x</div>
+                </div>
+                <div class="cpuSelectionContainer">
+                    <div class="cpuSelectionHeader">Computer selected:</div>
+                    <div id="cpuSelection">x</div>
                 </div>
             </div> 
         </div>
