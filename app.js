@@ -2,6 +2,9 @@
 const rockButton = document.querySelector('#rock');
 const paperButton = document.querySelector('#paper');
 const scissorsButton = document.querySelector('#scissors');
+const playerScore = document.querySelector('#playerScore');
+const cpuScore = document.querySelector('#cpuScore');
+
 
 //set event listeners and execute function
 rockButton.addEventListener('click', () => {
@@ -35,18 +38,22 @@ function playRound(playerSelection, computerSelection) {
 
      if ((playerSelection == 'rock' && computerSelection == 'scissors') || (playerSelection == 'paper' && computerSelection == 'rock') || (playerSelection == 'scissors' && computerSelection == 'paper')){
           //return 'Congrats, ' + playerSelection + ' beats ' + computerSelection + '!';
-          return 0;
+          //return 0;
+          console.log('0');
      }
      else if (playerSelection == computerSelection) {
           //return 'Tie! You both picked ' + playerSelection + '.';
-          return 1;
+          //return 1;
+          console.log('1');
      }
      else {
           //return 'Sorry, ' + computerSelection + ' beats ' + playerSelection + '.';
-          return 2;
+          //return 2;
+          console.log('2');
      }
 }
 
+/* //Old function to play 5 rounds. Only for reference now. 
 function game() {
      let playerWins = 0;
      let computerWins = 0;
@@ -77,3 +84,4 @@ function game() {
           return 'It was a tie! You each scored ' + playerWins + '.';
      }
 }
+*/
