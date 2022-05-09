@@ -37,19 +37,17 @@ function playRound(playerSelection, computerSelection) {
      playerSelection = playerSelection.toLowerCase();
 
      if ((playerSelection == 'rock' && computerSelection == 'scissors') || (playerSelection == 'paper' && computerSelection == 'rock') || (playerSelection == 'scissors' && computerSelection == 'paper')){
-          //return 'Congrats, ' + playerSelection + ' beats ' + computerSelection + '!';
-          //return 0;
           console.log('0');
+          playerScore += 
+          document.getElementById("results").textContent = 'Congrats, ' + playerSelection + ' beats ' + computerSelection + '!';
      }
      else if (playerSelection == computerSelection) {
-          //return 'Tie! You both picked ' + playerSelection + '.';
-          //return 1;
           console.log('1');
+          document.getElementById("results").textContent = 'Tie! You both picked ' + playerSelection + '.';
      }
      else {
-          //return 'Sorry, ' + computerSelection + ' beats ' + playerSelection + '.';
-          //return 2;
           console.log('2');
+          document.getElementById("results").textContent = 'Sorry, ' + computerSelection + ' beats ' + playerSelection + '.';
      }
 }
 
