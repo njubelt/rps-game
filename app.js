@@ -2,8 +2,9 @@
 const rockButton = document.querySelector('#rock');
 const paperButton = document.querySelector('#paper');
 const scissorsButton = document.querySelector('#scissors');
-const playerScore = document.querySelector('#playerScore');
-const cpuScore = document.querySelector('#cpuScore');
+
+playerScore = 0;
+cpuScore = 0;
 
 
 //set event listeners and execute function
@@ -38,18 +39,53 @@ function playRound(playerSelection, computerSelection) {
 
      if ((playerSelection == 'rock' && computerSelection == 'scissors') || (playerSelection == 'paper' && computerSelection == 'rock') || (playerSelection == 'scissors' && computerSelection == 'paper')){
           console.log('0');
-          playerScore += 
+          playerScore += 1;
+          document.getElementById("playerScore").textContent = playerScore;
           document.getElementById("results").textContent = 'Congrats, ' + playerSelection + ' beats ' + computerSelection + '!';
+          
      }
      else if (playerSelection == computerSelection) {
           console.log('1');
           document.getElementById("results").textContent = 'Tie! You both picked ' + playerSelection + '.';
      }
      else {
+          cpuScore += 1;
           console.log('2');
+          document.getElementById("cpuScore").textContent = cpuScore;
           document.getElementById("results").textContent = 'Sorry, ' + computerSelection + ' beats ' + playerSelection + '.';
      }
+
+     document.getElementById("cpuSelection").textContent = computerSelection;
+     document.getElementById("playerSelection").textContent = playerSelection;
+     
+     if ((playerScore === 5) || (cpuScore === 5)) {
+          endGame(playerScore, cpuScore);
+     }
 }
+
+function endGame(playerScore, cpuScore) {
+     if (playerScore > cpuScore) {
+          document.getElementById("results").textContent = "CONGRATS!!! You beat the CPU! Refresh to play again!"
+          document.getElementById("playerScore").style.color = "green";
+          document.getElementById("playerScore").style.fontWeight = "bolder";
+          document.getElementById("cpuScore").style.color = "red";
+          document.getElementById("rock").disabled = "true";
+          document.getElementById("paper").disabled = "true";
+          document.getElementById("scissors").disabled = "true";
+     }
+     
+     else {
+          document.getElementById("results").textContent = "Sorry! The CPU beat you. Refresh the game to play again."
+          document.getElementById("cpuScore").style.color = "green";
+          document.getElementById("cpuScore").style.fontWeight = "bolder";
+          document.getElementById("playerScore").style.color = "red";
+          document.getElementById("rock").disabled = "true";
+          document.getElementById("paper").disabled = "true";
+          document.getElementById("scissors").disabled = "true";
+
+     }
+}
+
 
 /* //Old function to play 5 rounds. Only for reference now. 
 function game() {
