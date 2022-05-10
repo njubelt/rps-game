@@ -55,8 +55,8 @@ function playRound(playerSelection, computerSelection) {
           document.getElementById("results").textContent = 'Sorry, ' + computerSelection + ' beats ' + playerSelection + '.';
      }
 
-     document.getElementById("cpuSelection").innerHTML = "<img src='../images/" + computerSelection + ".png' alt='rock' height='50px' width='50px'></img>";
-     document.getElementById("playerSelection").innerHTML = "<img src='../images/" + playerSelection + ".png' alt='rock' height='50px' width='50px'></img>";
+     document.getElementById("cpuSelection").innerHTML = "<img src='../images/" + computerSelection + ".png' alt='" + computerSelection + "' height='50px' width='50px'></img>";
+     document.getElementById("playerSelection").innerHTML = "<img src='../images/" + playerSelection + ".png' alt='" + playerSelection + "' height='50px' width='50px'></img>";
      
      if ((playerScore === 5) || (cpuScore === 5)) {
           endGame(playerScore, cpuScore);
