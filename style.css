@@ -56,13 +56,14 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:first baseline;
+    justify-content: baseline;
     width: 100px;
 }
 
 .cpuSelectionContainer, .playerSelectionContainer {
     width: 200px;
-    height: 100px;
+    height: 150px;
+    justify-content: flex-start;
     background-color: #f4a261;
     border: solid #264653;
     border-radius: 10px;
