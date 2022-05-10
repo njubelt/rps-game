@@ -7,13 +7,20 @@ body {
     margin-right: 250px;
 }
 
-h1, h6 {
+h1, h4 {
     display: flex;
     margin: 0;
     justify-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
     color: #f4f1de;
+}
+
+h1 {
+    text-shadow: 2px 2px #e76f51;
+}
+
+h4 {
+    font-style: italic;
 }
 
 
@@ -88,9 +95,7 @@ h1, h6 {
 
 button:hover {
     padding: 0px 120px;
-    background-color: #ff7f5f;
-    font-size: 90px;
-    
+    background-color: #ff7f5f;    
 }
 
 button {
