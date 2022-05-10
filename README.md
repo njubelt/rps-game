@@ -1,2 +1,6 @@
 # rps-game
-Rock, Paper, Scissors as an interactive game. This was created following The Odin Project. 
+
+
+Rock/paper/scissors created with HTML, CSS and vanilla JS.
+
+[Live Demo](https://njubelt.github.io/rps-game/) :point_left:
